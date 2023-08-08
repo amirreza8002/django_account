@@ -1,0 +1,4 @@
+.venv/
+.idea/
+db.slqite3
+__pycache__/
