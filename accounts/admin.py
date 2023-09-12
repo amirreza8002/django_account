@@ -17,5 +17,17 @@ class CustomUserAdmin(UserAdmin):
         "is_superuser",
     )
 
+    search_fields = ("name",)
+
+    def get_fieldsets(self, request, obj=None):
+        fieldsets = super().fieldsets + (
+            (
+                "Info",
+                {
+                    "fields": ("age",),
+                },
+            ),
+        )
+
 
 admin.site.register(CustomUser, CustomUserAdmin)
