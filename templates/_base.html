@@ -3,23 +3,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{% block title %}my site{% endblock %}</title>
+    <title>{% block title %}my site{% endblock title %}</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
 <body>
-  {% block header %}
-    <header>header</header>
-  {% endblock %}  
+  <header>
+     {% block header %}
+      <h1>header</h1>
+    {% endblock %}  
+  </header>    
   
-  {% block body %}
-    <main>body</main>
-  {% endblock body %}
-
-  {% block footer %}
-    <footer>footer</footer>
-  {% endblock %}
+  <main>
+    {% block body %}
+      <p>body</p>
+    {% endblock body %}
+  </main>
+  
+  <footer>
+    {% block footer %}
+      <p>footer</p>
+    {% endblock %}
+  </footer>
 </body>
 
 </html>
