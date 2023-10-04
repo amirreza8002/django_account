@@ -9,9 +9,17 @@
   </head>
 
 <body>
-  {% block content %}
+  {% block header %}
+    <header>header</header>
+  {% endblock %}  
+  
+  {% block body %}
+    <main>body</main>
+  {% endblock body %}
 
-  {% endblock content %}
+  {% block footer %}
+    <footer>footer</footer>
+  {% endblock %}
 </body>
 
 </html>
