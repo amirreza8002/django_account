@@ -3,9 +3,9 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block title %}{% trans "Sign In" %}{% endblock title %}
 
-{% block content %}
+{% block body %}
 
 <h1>{% trans "Sign In" %}</h1>
 
@@ -43,4 +43,4 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
 </form>
 
-{% endblock %}
+{% endblock title %}
