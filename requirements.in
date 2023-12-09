@@ -1,0 +1,5 @@
+black
+django
+django-allauth
+ruff
+django-debug-toolbar
