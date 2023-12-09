@@ -25,7 +25,7 @@ django==4.2.8
     #   -r requirements.in
     #   django-allauth
     #   django-debug-toolbar
-django-allauth==0.54.0
+django-allauth==0.58.2
     # via -r requirements.in
 django-debug-toolbar==4.2.0
     # via -r requirements.in
@@ -63,3 +63,5 @@ sqlparse==0.4.4
     #   django-debug-toolbar
 urllib3==2.1.0
     # via requests
+whitenoise==6.6.0
+    # via -r requirements.in

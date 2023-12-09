@@ -3,3 +3,4 @@ django
 django-allauth
 ruff
 django-debug-toolbar
+whitenoise
